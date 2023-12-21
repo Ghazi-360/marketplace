@@ -1,0 +1,26 @@
+.options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.options .optional-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px #888888;
+}
+
+.options p{
+    color: #333333;
+    font-size: 1.2rem;
+    font-weight: 600;
+}

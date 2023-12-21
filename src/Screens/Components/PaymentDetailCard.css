@@ -1,0 +1,35 @@
+.payment-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    width: 350px;
+    height: 300px;
+    border: none;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.payment-card .category-image{
+    /* border: none;
+    border-radius: 15px; */
+}
+.payment-card .payment-text{
+    gap: 5px;
+}
+
+.payment-card .payment-text h4{
+    color: #1A1A1A;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.payment-card .payment-text p{
+    color: #828282;
+    font-size: 1.0rem;
+    font-weight: 400;
+    text-align: left;
+}

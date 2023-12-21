@@ -1,0 +1,30 @@
+.category-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 310px;
+}
+
+.category-card .category-image{
+    width: 310px;
+    height: 290px;
+    border: none;
+    border-radius: 15px;
+}
+
+.category-card .category-text p{
+    color: #1A1A1A;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: left;
+    width: 290px;
+}
+
+.category-card .category-text p:last-child{
+    color: #219653;
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-align: left;
+    width: 290px;
+}
