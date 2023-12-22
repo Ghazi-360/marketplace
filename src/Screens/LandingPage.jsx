@@ -11,6 +11,9 @@ import CategoryCard from './Components/CategoryCard';
 import category1 from "../assets/category1.png";
 import PaymentDetailCard from './Components/PaymentDetailCard';
 import secure from "../assets/secure-payment.png";
+import referral from "../assets/referral.png";
+import LatestReleaseCard from './Components/LatestReleaseCard';
+import release from "../assets/latest-release.png";
 
 function LandingPage() {
 
@@ -37,6 +40,26 @@ function LandingPage() {
                     <CategoryCard imagePath={category1} title= "This is an example of the This is an example of the" price= "$ 150"/>
                     <CategoryCard imagePath={category1} title= "This is an example of the This is an example of the" price= "$ 150"/>
                 </div>
+
+                <div className='referral-main'>
+                    <div className='referral-text'>
+                        <h2>A powerful referral program</h2>
+                        <p>Earn more than you spend! Get a wallet on our site - open to all, not just buyers & sellers. Enjoy a 5% reward when the buyer confirms the delivery.</p>
+                        <button className="add-btn" >Join Now</button>
+                    </div>
+                    <div>
+                    <img className='refferal' src={referral}  />
+                    </div>
+
+                </div>
+
+                <div className='latest-release'>
+                     <LatestReleaseCard imagePath={release}/>
+                     <LatestReleaseCard imagePath={release}/>
+                     <LatestReleaseCard imagePath={release}/>
+                </div>
+
+
                 <div className='payment'>
                     <PaymentDetailCard imagePath={secure} title= "Secure Transactions" detail= "Buy with confidence. Enjoy purchasing the services you are searching for, with the most known and secured payment gateways. And when you pay? Our live chat system with the sellers system will ensure the best customer experience!" />
                     <PaymentDetailCard imagePath={secure} title= "Upgrade your game experience" detail= "Meet people from around the world with the passion for gaming and to help you. Our goal is to help you enjoy more your games, in respect of the developers and the other players." />
