@@ -1,0 +1,25 @@
+.header-wrapper {
+    background: url("../../../assets/header.png") center/cover no-repeat;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+.header-wrapper h1 {
+    color: #fff;
+    font-size: 4.0rem;
+    width: 50%;
+}
+
+.header-wrapper h4 {
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: 300;
+    width: 50%;
+}

@@ -1,0 +1,44 @@
+.referral-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #543DF1;
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 20px;
+}
+
+.referral-wrapper .referral-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 40%;
+    padding-left: 40px;
+    gap: 10px;
+}
+
+.referral-wrapper .referral-content h2 {
+    color: #fff;
+    font-size: 3.2rem;
+}
+
+.referral-wrapper .referral-content p {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.referral-wrapper .referral-content .referral-btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    color: #543DF1;
+    font-size: 1.0rem;
+    font-weight: 700;
+    background: #fff;
+    cursor: pointer;
+}
