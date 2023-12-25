@@ -1,5 +1,5 @@
 .landing-wrapper {
-    margin: 0 5rem;
+    margin: 0 3rem;
 }
 
 .landing-wrapper .options-wrapper {
@@ -7,4 +7,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .landing-wrapper {
+        margin: 0 1rem;
+    }
 }

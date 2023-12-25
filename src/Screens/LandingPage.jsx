@@ -17,6 +17,9 @@ import items from "../assets/box.png";
 import accounts from "../assets/accounts.png";
 import coaching from "../assets/coaching.png";
 import PaymentMethods from './Components/PaymentMethods/PaymentMethods';
+import Footer from './Components/Footer/Footer';
+import Form from './Components/Form/Form';
+import Navbar from './Components/Navbar/Navbar';
 
 const optionsData = [
     {
@@ -49,21 +52,22 @@ function LandingPage() {
 
     return (
         <>
+            <Navbar />
             <div className='landing-wrapper'>
                 <Header />
-
                 <div className="options-wrapper">
                     {optionsData.map((data, index) => (
                         <OptionCard key={index} path={data.icon} title={data.title} />
                     ))}
                 </div>
-
                 <Categories />
-                <Referral />
+                {/* <Referral /> */}
                 <LatestRelease />
-                <Benefits />
-                <PaymentMethods />
+                {/* <Form /> */}
+                {/* <Benefits /> */}
+                {/* <PaymentMethods /> */}
             </div>
+            {/* <Footer /> */}
         </>
     )
 }

@@ -39,12 +39,25 @@ function LatestRelease() {
     return (
         <>
             <div className="latestRelease-wrapper">
-                <Swiper spaceBetween={20} slidesPerView={4} grid={{ rows: 2, fill: 'row' }} modules={[Grid]} direction='horizontal'>
-                {latestReleases.map((release, index) => (
-                    <SwiperSlide key={index}>
-                        <LatestReleaseCard path={release.banner} />
-                    </SwiperSlide>
-                ))}
+                <div className="top-header">
+                    <h2>Latest Releases</h2>
+                    <button>
+                        Discover All
+                    </button>
+                </div>
+                <Swiper 
+                    breakpoints={{
+                        320: { slidesPerView: 1, spaceBetween: 80 },
+                        480: { slidesPerView: 2, spaceBetween: 60 },
+                        768: { slidesPerView: 3, spaceBetween: 40 },
+                        1024: { slidesPerView: 4, spaceBetween: 20 },
+                    }}
+                    grid={{ rows: 2, fill: 'row' }} modules={[Grid]} direction='horizontal'>
+                    {latestReleases.map((release, index) => (
+                        <SwiperSlide key={index}>
+                            <LatestReleaseCard path={release.banner} />
+                        </SwiperSlide>
+                    ))}
                 </Swiper>
             </div>
         </>

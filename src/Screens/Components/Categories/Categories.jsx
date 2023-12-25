@@ -79,7 +79,20 @@ function Categories() {
     return (
         <>
             <div className="categories-wrapper">
-                <Swiper spaceBetween={20} slidesPerView={4} grid={{ rows: 2, fill: 'row' }} modules={[Grid]} direction='horizontal'>
+                <div className="top-header">
+                    <h2>Categories</h2>
+                    <button>
+                        Discover All
+                    </button>
+                </div>
+                <Swiper
+                    breakpoints={{
+                        320: { slidesPerView: 1, spaceBetween: 80 },
+                        480: { slidesPerView: 2, spaceBetween: 60 },
+                        768: { slidesPerView: 3, spaceBetween: 40 },
+                        1024: { slidesPerView: 4, spaceBetween: 20 },
+                    }}
+                    grid={{ rows: 2, fill: 'row' }} modules={[Grid]} direction='horizontal'>
                     {categories.map((game, index) => (
                         <SwiperSlide key={index}>
                             <CategoryCard banner={game.banner} title={game.title} price={game.price} />

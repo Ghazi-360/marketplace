@@ -10,7 +10,7 @@ function CategoryCard({banner, title, price}) {
                 </div>
                 <div className='category-text'>
                     <p>{title}</p>
-                    <p>{price}</p>
+                    <p>$ {price}</p>
                 </div>  
             </div>
         </>
