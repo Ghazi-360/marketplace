@@ -61,13 +61,13 @@ function LandingPage() {
                     ))}
                 </div>
                 <Categories />
-                {/* <Referral /> */}
+                <Referral />
                 <LatestRelease />
-                {/* <Form /> */}
-                {/* <Benefits /> */}
-                {/* <PaymentMethods /> */}
+                <Form />
+                <Benefits />
+                <PaymentMethods />
             </div>
-            {/* <Footer /> */}
+            <Footer />
         </>
     )
 }

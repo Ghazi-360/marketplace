@@ -1,6 +1,6 @@
 .footer-wrapper {
     width: 100%;
-    padding: 3rem 5rem;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
     background: #fff;
@@ -9,6 +9,7 @@
 .footer-wrapper .footer-content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-wrapper .footer-content .footer-col {
@@ -34,6 +35,15 @@
     margin-top: 1rem;
 }
 
+.footer-wrapper .bottombar-wrapper .bottombar-col {
+    width: 30%;
+}
+
+/* .footer-wrapper .bottombar-wrapper .bottombar-logos img {
+    width: 100%;
+    height: auto;
+} */
+
 .footer-wrapper .bottombar-wrapper .bottombar-links {
     display: flex;
     justify-content: center;
@@ -45,6 +55,7 @@
     border-left: 1px solid #828282;
     padding-left: 15px;
     cursor: pointer;
+    font-size: 12px;
 }
 
 .footer-wrapper .bottombar-wrapper .bottombar-links p:first-child {
@@ -56,4 +67,21 @@
     padding: 1rem 2rem;
     border-radius: 50px;
     background: #E0E0E0;
+    text-align: center;
+}
+
+@media screen and (max-width: 770px) {
+    .footer-wrapper .footer-content .footer-col {
+       align-items: center;
+       width: 100%;
+    }
+
+    .footer-wrapper .bottombar-wrapper {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .footer-wrapper .bottombar-wrapper .bottombar-col {
+        width: 100%;
+    }
 }

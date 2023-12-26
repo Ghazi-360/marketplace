@@ -14,8 +14,8 @@ function Referral() {
                     <p>Earn more than you spend! Get a wallet on our site - open to all, not just buyers & sellers. Enjoy a 5% reward when the buyer confirms the delivery.</p>
                     <button className="referral-btn" >Join Now</button>
                 </div>
-                <div>
-                    <img className='refferal' src={referral} alt='referral-banner' />
+                <div  className='refferal-image'>
+                    <img src={referral} alt='referral-banner' />
                 </div>
             </div>
         </>

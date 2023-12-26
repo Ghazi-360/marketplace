@@ -3,6 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
     margin: 3rem 0;
 }
 
@@ -12,8 +13,8 @@
     justify-content: start;
     align-items: start;
     gap: 10px;
-    width: 350px;
-    height: 300px;
+    width: 25%;
+    height: 320px;
     border: none;
     border-radius: 15px;
     background-color: #fff;
@@ -42,4 +43,20 @@
     font-size: 1.0rem;
     font-weight: 400;
     text-align: left;
+}
+
+@media screen and (max-width: 1050px) {
+    .benefits-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .benefit-card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .benefit-card {
+        width: 100%;
+    }
 }

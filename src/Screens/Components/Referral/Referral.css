@@ -43,3 +43,29 @@
     background: #fff;
     cursor: pointer;
 }
+
+.referral-wrapper .refferal-image {
+    width: 45%;
+    height: auto;
+}
+
+.referral-wrapper .refferal-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 770px) {
+    .referral-wrapper {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .referral-wrapper .referral-content {
+        width: 100%;
+    }
+
+    .referral-wrapper .refferal-image {
+        width: 100%;
+    }
+}

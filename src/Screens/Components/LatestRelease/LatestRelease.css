@@ -44,3 +44,9 @@
     height: 100%;
     object-fit: cover;
 }
+
+@media screen and (max-width: 520px) {
+    .latestRelease-wrapper .top-header h2 {
+        font-size: 20px;
+    }
+}
